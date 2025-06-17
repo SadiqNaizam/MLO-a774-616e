@@ -4,89 +4,89 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Light Theme Colors based on Design Input */
+    --background: 210 17% 98%; /* #F8F9FA */
+    --foreground: 210 10% 15%; /* #212529 */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%; /* #FFFFFF */
+    --card-foreground: 210 10% 15%; /* #212529 */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%; /* #FFFFFF */
+    --popover-foreground: 210 10% 15%; /* #212529 */
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 211 100% 50%; /* #007AFF */
+    --primary-foreground: 210 40% 98%; /* Light color for text on primary */
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 210 40% 96.1%; /* A light gray for secondary elements */
+    --secondary-foreground: 210 10% 15%; /* Dark text for secondary elements */
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 40% 96.1%; /* Lighter gray for muted backgrounds */
+    --muted-foreground: 208 7% 46%; /* #6C757D for muted text */
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 211 100% 60%; /* Lighter shade of primary for accents */
+    --accent-foreground: 210 10% 15%; /* Dark text on accent */
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 350 71% 52%; /* #DC3545 for errors */
+    --destructive-foreground: 210 40% 98%; /* Light text on destructive */
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 210 20% 88%; /* Neutral border color */
+    --input: 210 20% 88%; /* Neutral input border, same as border */
+    --ring: 211 100% 50%; /* Primary color for focus rings */
 
-    --radius: 0.5rem;
+    --radius: 0.375rem; /* 6px corner rounding */
 
-    --sidebar-background: 0 0% 98%;
+    --font-sans: "Inter", sans-serif;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Sidebar variables aligned with the new theme */
+    --sidebar-background: 210 17% 96%;
+    --sidebar-foreground: 210 10% 15%;
+    --sidebar-primary: 211 100% 50%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 211 100% 60%;
+    --sidebar-accent-foreground: 210 10% 15%;
+    --sidebar-border: 210 20% 88%;
+    --sidebar-ring: 211 100% 50%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Dark Theme Colors based on Design Input */
+    --background: 0 0% 10%; /* #1A1A1A */
+    --foreground: 210 17% 98%; /* #F8F9FA Light text */
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 12%; /* Slightly lighter than background for cards */
+    --card-foreground: 210 17% 98%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 12%;
+    --popover-foreground: 210 17% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 211 100% 50%; /* #007AFF - kept same blue */
+    --primary-foreground: 210 40% 98%; /* Light text on primary */
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 217.2 32.6% 17.5%; /* Darker shade for secondary elements */
+    --secondary-foreground: 210 17% 98%; /* Light text for secondary */
 
     --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted-foreground: 208 13% 70%; /* #ADB5BD for muted text */
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 211 100% 60%; /* Lighter shade of primary */
+    --accent-foreground: 0 0% 10%; /* Dark text on accent for contrast */
 
-    --destructive: 0 62.8% 30.6%;
+    --destructive: 350 71% 52%; /* #DC3545 - kept same red */
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 217.2 32.6% 25.5%; /* Border for dark mode */
+    --input: 217.2 32.6% 25.5%;
+    --ring: 211 100% 60%; /* Slightly lighter primary for dark mode focus */
+
+    /* Sidebar variables aligned with the new dark theme */
+    --sidebar-background: 0 0% 12%;
+    --sidebar-foreground: 210 17% 98%;
+    --sidebar-primary: 211 100% 50%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 211 100% 60%;
+    --sidebar-accent-foreground: 0 0% 10%;
+    --sidebar-border: 217.2 32.6% 25.5%;
+    --sidebar-ring: 211 100% 60%;
   }
 }
 
@@ -96,6 +96,6 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans; /* Added font-sans */
   }
 }
